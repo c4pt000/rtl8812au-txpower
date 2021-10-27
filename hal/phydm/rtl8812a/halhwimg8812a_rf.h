@@ -1,123 +1,128 @@
-/******************************************************************************
- *
- * Copyright(c) 2007 - 2017 Realtek Corporation.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of version 2 of the GNU General Public License as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
- * more details.
- *
- *****************************************************************************/
+/****************************************************************************** 
+* 
+* Copyright(c) 2007 - 2011 Realtek Corporation. All rights reserved. 
+* 
+* This program is free software; you can redistribute it and/or modify it 
+* under the terms of version 2 of the GNU General Public License as 
+* published by the Free Software Foundation. 
+* 
+* This program is distributed in the hope that it will be useful, but WITHOUT 
+* ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or 
+* FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for 
+* more details. 
+* 
+* You should have received a copy of the GNU General Public License along with 
+* this program; if not, write to the Free Software Foundation, Inc., 
+* 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA 
+* 
+* 
+******************************************************************************/
 
-/*Image2HeaderVersion: 3.5.2*/
+/*Image2HeaderVersion: 2.14*/
 #if (RTL8812A_SUPPORT == 1)
 #ifndef __INC_MP_RF_HW_IMG_8812A_H
 #define __INC_MP_RF_HW_IMG_8812A_H
 
 
 /******************************************************************************
-*                           radioa.TXT
+*                           RadioA.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_radioa( /* tc: Test Chip, mp: mp Chip*/
-				    struct dm_struct *dm);
-u32 odm_get_version_mp_8812a_radioa(void);
+ODM_ReadAndConfig_MP_8812A_RadioA(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_RadioA(void);
 
 /******************************************************************************
-*                           radiob.TXT
+*                           RadioB.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_radiob( /* tc: Test Chip, mp: mp Chip*/
-				    struct dm_struct *dm);
-u32 odm_get_version_mp_8812a_radiob(void);
+ODM_ReadAndConfig_MP_8812A_RadioB(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_RadioB(void);
 
 /******************************************************************************
-*                           txpowertrack_ap.TXT
+*                           TxPowerTrack_AP.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_txpowertrack_ap( /* tc: Test Chip, mp: mp Chip*/
-					     struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_txpowertrack_ap(void);
+ODM_ReadAndConfig_MP_8812A_TxPowerTrack_AP(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_TxPowerTrack_AP(void);
 
 /******************************************************************************
-*                           txpowertrack_pcie.TXT
+*                           TxPowerTrack_PCIE.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_txpowertrack_pcie( /* tc: Test Chip, mp: mp Chip*/
-					       struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_txpowertrack_pcie(void);
+ODM_ReadAndConfig_MP_8812A_TxPowerTrack_PCIE(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_TxPowerTrack_PCIE(void);
 
 /******************************************************************************
-*                           txpowertrack_rfe3.TXT
+*                           TxPowerTrack_RFE3.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_txpowertrack_rfe3( /* tc: Test Chip, mp: mp Chip*/
-					       struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_txpowertrack_rfe3(void);
+ODM_ReadAndConfig_MP_8812A_TxPowerTrack_RFE3(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_TxPowerTrack_RFE3(void);
 
 /******************************************************************************
-*                           txpowertrack_rfe4.TXT
+*                           TxPowerTrack_RFE4.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_txpowertrack_rfe4( /* tc: Test Chip, mp: mp Chip*/
-					       struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_txpowertrack_rfe4(void);
+ODM_ReadAndConfig_MP_8812A_TxPowerTrack_RFE4(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_TxPowerTrack_RFE4(void);
 
 /******************************************************************************
-*                           txpowertrack_usb.TXT
+*                           TxPowerTrack_USB.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_txpowertrack_usb( /* tc: Test Chip, mp: mp Chip*/
-					      struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_txpowertrack_usb(void);
+ODM_ReadAndConfig_MP_8812A_TxPowerTrack_USB(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_TxPowerTrack_USB(void);
 
 /******************************************************************************
-*                           txpwr_lmt.TXT
+*                           TXPWR_LMT.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_txpwr_lmt( /* tc: Test Chip, mp: mp Chip*/
-				       struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_txpwr_lmt(void);
+ODM_ReadAndConfig_MP_8812A_TXPWR_LMT(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_TXPWR_LMT(void);
 
 /******************************************************************************
-*                           txpwr_lmt_hm812a03.TXT
+*                           TXPWR_LMT_HM812A03.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_txpwr_lmt_hm812a03( /* tc: Test Chip, mp: mp Chip*/
-						struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_txpwr_lmt_hm812a03(void);
+ODM_ReadAndConfig_MP_8812A_TXPWR_LMT_HM812A03(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_TXPWR_LMT_HM812A03(void);
 
 /******************************************************************************
-*                           txpwr_lmt_nfa812a00.TXT
+*                           TXPWR_LMT_NFA812A00.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_txpwr_lmt_nfa812a00(
-						 /* tc: Test Chip, mp: mp Chip*/
-						 struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_txpwr_lmt_nfa812a00(void);
-
-/******************************************************************************
-*                           txpwr_lmt_tplink.TXT
-******************************************************************************/
-
-void
-odm_read_and_config_mp_8812a_txpwr_lmt_tplink( /* tc: Test Chip, mp: mp Chip*/
-					      struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_txpwr_lmt_tplink(void);
+ODM_ReadAndConfig_MP_8812A_TXPWR_LMT_NFA812A00(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_TXPWR_LMT_NFA812A00(void);
 
 #endif
 #endif /* end of HWIMG_SUPPORT*/

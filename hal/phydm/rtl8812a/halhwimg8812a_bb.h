@@ -1,106 +1,102 @@
-/******************************************************************************
- *
- * Copyright(c) 2007 - 2017 Realtek Corporation.
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms of version 2 of the GNU General Public License as
- * published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
- * more details.
- *
- *****************************************************************************/
+/****************************************************************************** 
+* 
+* Copyright(c) 2007 - 2011 Realtek Corporation. All rights reserved. 
+* 
+* This program is free software; you can redistribute it and/or modify it 
+* under the terms of version 2 of the GNU General Public License as 
+* published by the Free Software Foundation. 
+* 
+* This program is distributed in the hope that it will be useful, but WITHOUT 
+* ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or 
+* FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for 
+* more details. 
+* 
+* You should have received a copy of the GNU General Public License along with 
+* this program; if not, write to the Free Software Foundation, Inc., 
+* 51 Franklin Street, Fifth Floor, Boston, MA 02110, USA 
+* 
+* 
+******************************************************************************/
 
-/*Image2HeaderVersion: 3.5.2*/
+/*Image2HeaderVersion: 2.14*/
 #if (RTL8812A_SUPPORT == 1)
 #ifndef __INC_MP_BB_HW_IMG_8812A_H
 #define __INC_MP_BB_HW_IMG_8812A_H
 
 
 /******************************************************************************
-*                           agc_tab.TXT
+*                           AGC_TAB.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_agc_tab( /* tc: Test Chip, mp: mp Chip*/
-				     struct dm_struct *dm);
-u32 odm_get_version_mp_8812a_agc_tab(void);
+ODM_ReadAndConfig_MP_8812A_AGC_TAB(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_AGC_TAB(void);
 
 /******************************************************************************
-*                           agc_tab_diff.TXT
+*                           AGC_TAB_DIFF.TXT
 ******************************************************************************/
 
-extern u32	array_mp_8812a_agc_tab_diff_lb[60];
-extern u32	array_mp_8812a_agc_tab_diff_hb[60];
+extern u4Byte Array_MP_8812A_AGC_TAB_DIFF_LB[60];
+extern u4Byte Array_MP_8812A_AGC_TAB_DIFF_HB[60];
 void
-odm_read_and_config_mp_8812a_agc_tab_diff(struct dm_struct *dm, u32 array[],
-					  u32 array_len);
-u32 odm_get_version_mp_8812a_agc_tab_diff(void);
+ODM_ReadAndConfig_MP_8812A_AGC_TAB_DIFF(
+     IN   PDM_ODM_T    pDM_Odm,
+ 	 IN   u4Byte  	   Array[],
+ 	 IN   u4Byte  	   ArrayLen 
+);
+u4Byte ODM_GetVersion_MP_8812A_AGC_TAB_DIFF(void);
 
 /******************************************************************************
-*                           phy_reg.TXT
+*                           PHY_REG.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_phy_reg( /* tc: Test Chip, mp: mp Chip*/
-				     struct dm_struct *dm);
-u32 odm_get_version_mp_8812a_phy_reg(void);
+ODM_ReadAndConfig_MP_8812A_PHY_REG(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_PHY_REG(void);
 
 /******************************************************************************
-*                           phy_reg_mp.TXT
+*                           PHY_REG_MP.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_phy_reg_mp( /* tc: Test Chip, mp: mp Chip*/
-					struct dm_struct *dm);
-u32 odm_get_version_mp_8812a_phy_reg_mp(void);
+ODM_ReadAndConfig_MP_8812A_PHY_REG_MP(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_PHY_REG_MP(void);
 
 /******************************************************************************
-*                           phy_reg_pg.TXT
+*                           PHY_REG_PG.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_phy_reg_pg( /* tc: Test Chip, mp: mp Chip*/
-					struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_phy_reg_pg(void);
+ODM_ReadAndConfig_MP_8812A_PHY_REG_PG(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_PHY_REG_PG(void);
 
 /******************************************************************************
-*                           phy_reg_pg_asus.TXT
+*                           PHY_REG_PG_ASUS.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_phy_reg_pg_asus( /* tc: Test Chip, mp: mp Chip*/
-					     struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_phy_reg_pg_asus(void);
+ODM_ReadAndConfig_MP_8812A_PHY_REG_PG_ASUS(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_PHY_REG_PG_ASUS(void);
 
 /******************************************************************************
-*                           phy_reg_pg_dni.TXT
+*                           PHY_REG_PG_NEC.TXT
 ******************************************************************************/
 
 void
-odm_read_and_config_mp_8812a_phy_reg_pg_dni( /* tc: Test Chip, mp: mp Chip*/
-					    struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_phy_reg_pg_dni(void);
-
-/******************************************************************************
-*                           phy_reg_pg_nec.TXT
-******************************************************************************/
-
-void
-odm_read_and_config_mp_8812a_phy_reg_pg_nec( /* tc: Test Chip, mp: mp Chip*/
-					    struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_phy_reg_pg_nec(void);
-
-/******************************************************************************
-*                           phy_reg_pg_tplink.TXT
-******************************************************************************/
-
-void
-odm_read_and_config_mp_8812a_phy_reg_pg_tplink( /* tc: Test Chip, mp: mp Chip*/
-					       struct dm_struct *dm);
-u32	odm_get_version_mp_8812a_phy_reg_pg_tplink(void);
+ODM_ReadAndConfig_MP_8812A_PHY_REG_PG_NEC(/* TC: Test Chip, MP: MP Chip*/
+	IN   PDM_ODM_T  pDM_Odm
+);
+u4Byte ODM_GetVersion_MP_8812A_PHY_REG_PG_NEC(void);
 
 #endif
 #endif /* end of HWIMG_SUPPORT*/
